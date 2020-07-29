@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import auth from './auth/auth'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <button onClick={auth.authorize}>Login here!</button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
